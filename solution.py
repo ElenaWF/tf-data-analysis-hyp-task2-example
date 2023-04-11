@@ -12,6 +12,6 @@ def solution(x: np.array, y: np.array) -> bool:
     # Не меняйте название функции и её аргументы
     alpha = 0.01
     m = "laplacian"
-    g = 1.1
+    g = 1.2
     pval = MMD(compute_kernel=m, gamma=g).test(x, y).pvalue
     return pval < alpha # Ваш ответ, True или False
